@@ -51,6 +51,8 @@ group :development do
 end
 
 group :production do
+  # just for heroku, because it doesn't use sqlite
+  # it uses postgresql
   gem 'pg', '0.20.0'
 end
 
